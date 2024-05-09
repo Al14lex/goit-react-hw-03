@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import ContactForm from "./Components/ContactForm/ContactForm"
+import ContactForm from "./componennts/ContactForm/ContactForm"
 import listNumbers from "./numbers.json";
-import SearchBox from "./Components/SearchBox/SearchBox";
-import ContactList from "./Components/ContactList/ContactList";
+import SearchBox from "./componennts/SearchBox/SearchBox";
+import ContactList from "./componennts/ContactList/ContactList";
 
 
 export default function App() {
@@ -33,7 +33,7 @@ const deletePhone = (phoneId) => {
       return prevPhone.filter((phone) => phone.id !== phoneId);
     });
 };
-  
+
   return (
     <>
       <h1>Phonebook</h1>
